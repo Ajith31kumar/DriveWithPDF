@@ -1,0 +1,22 @@
+{
+    "elbow_angle_deg": [
+        120,
+        170
+    ],
+    "spine_lean_deg": [
+        0,
+        20
+    ],
+    "head_knee_diff_px": [
+        0,
+        40
+    ],
+    "foot_direction_deg": [
+        -45,
+        45
+    ],
+    "bat_angle_deg_at_impact": [
+        -20,
+        20
+    ]
+}
