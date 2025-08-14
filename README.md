@@ -95,7 +95,7 @@ Sample video used for testing:
 
 ### 1. Clone Repository
 ```bash
-git clone https://github.com/yourusername/AthleteRise.git
+git clone https://github.com/Uvais5/AthleteRise.git
 cd AthleteRise
 ```
 ### 2. Install Dependencies
