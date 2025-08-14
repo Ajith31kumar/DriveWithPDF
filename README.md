@@ -53,6 +53,7 @@ Sample video used for testing:
 
 ## 📂 Deliverables
 - `cover_drive_analysis_realtime.py` – Main backend processing script.
+- `main.py` - Main frontend processing script.
 - `/output/` folder containing:
   - `annotated_video.mp4`
   - `evaluation.json`
