@@ -91,3 +91,12 @@ Sample video used for testing:
 ```bash
 git clone https://github.com/yourusername/AthleteRise.git
 cd AthleteRise
+```
+### 2. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+### 3. Running the Project
+```bash
+streamlit run main.py
+```
