@@ -56,7 +56,20 @@ Sample video used for testing:
    - Saves summary to `evaluation.json`.
 
 ---
+## ⚠️ Assumptions & Limitations
+- Designed primarily for cricket **cover drives**; may require calibration for other shots.
+- Performance depends on video quality, lighting, and camera angle.
+- Occlusions or players blocking the batter can reduce detection accuracy.
+- **Bat tracking** is not implemented in the base version.
+- Does not include **automatic phase segmentation** (stance, stride, downswing, etc.).
+- **Contact-moment detection** for bat-ball impact is not available.
+- Processing speed depends on CPU/GPU capability; may not be real-time on slower machines.
+- Angles and measurements are based on video frame coordinates; minor calibration errors may occur.
+- Default `targets.json` thresholds may not fit all player techniques and require manual tuning.
+- Designed for a single batter; multiple players in frame can cause incorrect tracking.
+- Requires correct Python environment setup with dependencies from `requirements.txt`.
 
+---
 ## 📂 Deliverables
 - `cover_drive_analysis_realtime.py` – Main backend processing script.
 - `main.py` - Main frontend processing script.
