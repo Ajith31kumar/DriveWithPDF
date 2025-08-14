@@ -1,0 +1,8 @@
+streamlit
+mediapipe
+opencv-python
+numpy
+pandas
+matplotlib
+reportlab
+python-dotenv
