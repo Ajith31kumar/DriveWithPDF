@@ -3,6 +3,7 @@
 <p align="center">
   <img src="home.png" alt="App screenshot" width="640">
 </p>
+------
 ## 📌 Objective
 AthleteRise is a Python-based system that processes a full cricket batting video in real time, performs pose estimation on each frame, calculates biomechanical metrics, and outputs:
 
