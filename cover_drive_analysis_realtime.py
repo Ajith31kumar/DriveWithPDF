@@ -563,13 +563,3 @@ def analyze_video(video_path: str) -> dict:
 
     return evaluation
 
-# -----------------------------
-# CLI entry
-# -----------------------------
-if __name__ == "__main__":
-    VIDEO_PATH = "cricket.mp4"  # change to your input
-    out = analyze_video(VIDEO_PATH)
-    print(json.dumps(out, indent=4))
-    print("\nArtifacts:")
-    for k, v in out["artifacts"].items():
-        print(f" - {k}: {v}")
