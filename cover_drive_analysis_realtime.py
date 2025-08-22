@@ -85,7 +85,20 @@ def foot_direction_deg(ankle, knee):
     dx = knee[0] - ankle[0]
     dy = knee[1] - ankle[1]
     return float(np.degrees(np.arctan2(dy, dx)))
-
+    
+def normalize_angle_deg(angle):
+    """Return angle in -180..180"""
+    if angle is None:
+        return None
+    a = ((angle + 180) % 360) - 180
+    return round(a, 1)
+def normalized_head_knee(nose, knee, hip):
+    # returns head-knee horizontal diff as proportion of torso height
+    torso_h = math.hypot(nose[0]-hip[0], nose[1]-hip[1])
+    if torso_h < 1e-6:
+        return None
+    raw_px = abs(nose[0] - knee[0])
+    return round((raw_px / torso_h) * 100.0, 1)  # percent of torso height
 def safe_get_landmark_px(lms, lid, w, h):
     lm = lms[lid]
     return (int(lm.x*w), int(lm.y*h))
@@ -232,19 +245,7 @@ def grade_from_scores(scores):
     if avg >= 8.0: return "Advanced"
     if avg >= 6.5: return "Intermediate"
     return "Beginner"
-def normalize_angle_deg(angle):
-    """Return angle in -180..180"""
-    if angle is None:
-        return None
-    a = ((angle + 180) % 360) - 180
-    return round(a, 1)
-def normalized_head_knee(nose, knee, hip):
-    # returns head-knee horizontal diff as proportion of torso height
-    torso_h = math.hypot(nose[0]-hip[0], nose[1]-hip[1])
-    if torso_h < 1e-6:
-        return None
-    raw_px = abs(nose[0] - knee[0])
-    return round((raw_px / torso_h) * 100.0, 1)  # percent of torso height
+
 
 # -----------------------------
 # PDF Report
