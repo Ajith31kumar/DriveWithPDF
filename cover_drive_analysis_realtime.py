@@ -488,34 +488,6 @@ def analyze_video(video_path: str) -> dict:
     plt.legend(loc="best"); plt.tight_layout()
     plt.savefig(FINAL_GRAPH_PNG_PATH); plt.close()
 
-    # Animated graph video (separate from annotated)
-    # if time_list:
-    #     chart_frames = int(2 * fps)  # 2s animation
-    #     width, height = int(width), int(height)
-    #     # graph_writer = cv2.VideoWriter(SMOOTH_GRAPH_VIDEO, cv2.VideoWriter_fourcc(*"avc1"), fps, (width, height))
-    #     for i in range(chart_frames):
-    #         progress = max(1, int(len(time_list) * (i / chart_frames)))
-    #         plt.figure(figsize=(10,4))
-    #         plt.plot(time_list[:progress], elbow_vals[:progress], label="Elbow angle (deg)")
-    #         plt.plot(time_list[:progress], spine_vals[:progress], label="Spine lean (deg)")
-    #         plt.xlabel("Time (s)"); plt.ylabel("Angle (deg)")
-    #         plt.title("Temporal Trends: Elbow & Spine")
-    #         plt.legend(loc="best"); plt.tight_layout()
-    #         plt.savefig("temp_chart.png"); plt.close()
-
-    #         chart_img = cv2.imread("temp_chart.png")
-    #         if chart_img is None:
-    #             continue
-    #         chart_img = cv2.resize(chart_img, (width, height))
-    #         # put avg fps onto chart video
-    #         cv2.putText(chart_img, f"Avg FPS: {avg_fps:.1f}", (width-220, 36),
-    #                     cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0,0,0), 3)
-    #         cv2.putText(chart_img, f"Avg FPS: {avg_fps:.1f}", (width-220, 36),
-    #                     cv2.FONT_HERSHEY_SIMPLEX, 0.7, (255,255,255), 2)
-    #         graph_writer.write(chart_img)
-    #     graph_writer.release()
-    #     if os.path.exists("temp_chart.png"):
-    #         os.remove("temp_chart.png")
 
     # Bat path straightness & impact bat angle
     straightness = path_straightness(bat_angles)
