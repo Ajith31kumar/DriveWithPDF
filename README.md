@@ -1,11 +1,15 @@
 # AthleteRise – AI-Powered Cricket Analytics  
 **Real-Time Cover Drive Analysis from Full Video**
 
-<p align="center">
+
+<div align="center">
   <a href="https://youtu.be/BQ6c5AnQHEU" target="_blank">
-  <img src="home.png" alt="App screenshot" width="640">
-  
-</p>
+    <img src="home.png" alt="Watch Anime Recommendation System Demo" width="640">
+  </a>
+  <br>
+  <strong><a href="http://www.youtube.com/watch?v=XKYLPc-wEyc" target="_blank">▶️ Watch: Build a Content-Based Anime Recommender System</a></strong>
+  <p>Video by Data Science Solutions</p>
+</div>
 
 ---
 
