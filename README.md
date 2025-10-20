@@ -2,7 +2,9 @@
 **Real-Time Cover Drive Analysis from Full Video**
 
 <p align="center">
+  <a href="https://youtu.be/BQ6c5AnQHEU" target="_blank">
   <img src="home.png" alt="App screenshot" width="640">
+  
 </p>
 
 ---
